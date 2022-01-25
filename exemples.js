@@ -1,14 +1,13 @@
 const parametro01 = 'alura';
 const parametro02 = 'semana';
 
-outraFunction = (arrayParametros, parametro01, parametro02) => {
+novaFunction = (arrayParametros, parametro01, parametro02) => {
     console.log(`${arrayParametros[0]}${parametro01}${arrayParametros[1]}${parametro02}`);
 }
 
 // As duas chamadas são equivalentes!
-outraFunction`Eu estudo na ${parametro01} todos os dias da ${parametro02}`;
-
-outraFunction(['Eu estudo na ', ' todos os dias da '], parametro01, parametro02);
+novaFunction`Eu estudo na ${parametro01} todos os dias da ${parametro02}`;
+novaFunction(['Eu estudo na ', ' todos os dias da '], parametro01, parametro02);
 
 function negrito(arrayStrings, ...valores) {
 
